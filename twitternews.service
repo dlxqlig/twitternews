@@ -1,0 +1,16 @@
+[Unit]
+Description=Twitter List Monitor Service
+After=network.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/root/work/twitternews
+ExecStart=/usr/bin/python3 -m app.main
+Restart=always
+RestartSec=10
+# Environment variables are loaded by the app from .env file in WorkingDirectory
+# If you want to override them here, use Environment=KEY=VALUE
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,15 @@
+fastapi
+uvicorn
+sqlalchemy
+pydantic
+pydantic-settings
+requests
+apscheduler
+jinja2
+python-dotenv
+openai
+google-generativeai
+dashscope
+loguru
+itsdangerous
+python-multipart
